@@ -1,0 +1,122 @@
+/* General Container Styling */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px; /* Limits max width */
+    margin: 80px auto; /* Space from navbar */
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left Column - Image */
+  .about-image {
+    flex: 1; /* Makes it flexible */
+    max-width: 50%; /* Bootstrap 6 columns */
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Column - Content */
+  .about-content {
+    flex: 1; /* Makes it flexible */
+    max-width: 50%; /* Bootstrap 6 columns */
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .about-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Paragraph and Icon Styling */
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .about-content .icon {
+    margin-right: 8px;
+    color: yellow; /* Bootstrap primary color */
+  }
+  
+  /* Social Media Icons */
+  .about-icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .about-icons .icon {
+    font-size: 24px;
+    color: #1DA1F2; /* Twitter Blue */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .about-icons .icon:hover {
+    transform: scale(1.2);
+    color: #0d8af0;
+  }
+  
+  /* 🔥 Fully Responsive Layout 🔥 */
+  @media (max-width: 1200px) {  /* Large Desktops */
+    .about-container {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 992px) {  /* Laptops & Tablets */
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image, .about-content {
+      max-width: 80%;
+    }
+  
+    .about-content {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {  /* Tablets & Small Screens */
+    .about-image, .about-content {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {  /* Mobile Phones */
+    .about-image, .about-content {
+      max-width: 100%;
+    }
+  
+    .about-content {
+      padding: 20px;
+    }
+  
+    .about-content h2 {
+      font-size: 24px;
+    }
+  
+    .about-content p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  
+    .about-icons .icon {
+      font-size: 20px;
+    }
+  }
+  

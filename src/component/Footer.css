@@ -1,0 +1,159 @@
+/* General Styles */
+.footer-container {
+    background-color: #2c3e50; /* Dark blue-gray */
+    color: #ecf0f1; /* Light gray */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Quick Links */
+  .quick-links h4,
+  .social-links h4,
+  .contact-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f1c40f; /* Gold/yellow for headings */
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .quick-links ul li a {
+    color: #ecf0f1; /* Light gray */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links ul li a:hover {
+    color: #f1c40f; /* Gold/yellow on hover */
+  }
+  
+  /* Social Links */
+  .social-links .social-icon {
+    font-size: 2rem;
+    color: #ecf0f1; /* Light gray */
+    transition: color 0.3s ease;
+  }
+  
+  .social-links .social-icon:hover {
+    color: #1da1f2; /* Twitter blue on hover */
+  }
+  
+  /* Contact Information */
+  .contact-info p {
+    margin: 0 0 10px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-info a {
+    color: #ecf0f1; /* Light gray */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #f1c40f; /* Gold/yellow on hover */
+  }
+  
+  /* Artist Statement */
+  .artist-statement {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+  }
+  
+  .artist-statement p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #bdc3c7; /* Light gray */
+    margin: 0;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bdc3c7; /* Light gray */
+  }
+  
+  .footer-bottom a {
+    color: #f1c40f; /* Gold/yellow */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom a:hover {
+    color: #1da1f2; /* Twitter blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .quick-links,
+    .social-links,
+    .contact-info {
+      margin-bottom: 20px;
+    }
+  
+    .quick-links ul li {
+      margin-bottom: 8px;
+    }
+  
+    .artist-statement p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 20px 10px;
+    }
+  
+    .quick-links h4,
+    .social-links h4,
+    .contact-info h4 {
+      font-size: 1.3rem;
+    }
+  
+    .quick-links ul li a,
+    .contact-info p,
+    .artist-statement p {
+      font-size: 1rem;
+    }
+  
+    .footer-bottom p {
+      font-size: 0.8rem;
+    }
+  }
